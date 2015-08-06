@@ -13,14 +13,18 @@
  *= require_tree .
  *= require_self
  */
-
+@import "font-awesome";
 *{
 	margin:0;
 	padding:0;
 }
 header{
 	background:#000;
-	height:100px;
+}
+.container{
+	background:#ffdc32;
+	clear:both;
+	padding:20px;
 }
 footer{
 	background:#000;

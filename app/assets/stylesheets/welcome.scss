@@ -1,3 +1,23 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.tabmenu{
+	border-top:2px solid #000
+}
+.tabmenu a{
+	display:inline-block;
+	width:50%;
+	text-align:center;
+	background:#fff;
+	color:#000;
+	padding:10px 0
+}
+.tabmenu a.active{
+	background:#000;
+	color:#fff
+}
+.tabview li{
+	background:#fff;
+	clear:both
+}
