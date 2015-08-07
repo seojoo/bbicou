@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>삐약쿠폰</title>
+  <title>삐약쿠폰-서버</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
 
 <header>
-	<div id="logo"><%= image_tag 'logo_mini.png' , :alt => '병아리그림' %></div>
+	<div id="logo" class="pull-left">
+		<%= image_tag 'logo_mini.png' ,:width => '20' ,:height => '18' %>
+		<strong><span class="main-color">삐약쿠폰</span> 8월</strong>
+	</div>
+	<div class="pull-right">
+		<i class="fa fa-user" style="color:#fff"></i>
+	</div>
 </header>
 
 <div class="container">
