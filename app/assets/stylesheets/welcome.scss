@@ -6,10 +6,10 @@
 	border:1px solid #000;
 	overflow:hidden;
 	clear:both;
+	border-radius:6px
 }
 .tabmenu{
-	border-top:2px solid #000;
-	clear:both
+	clear:both;
 }
 .tabmenu a{
 	display:inline-block;
@@ -17,7 +17,9 @@
 	text-align:center;
 	background:#000;
 	color:#fff;
-	padding:15px 0
+	padding:15px 0;
+	font-size:18px;
+	font-weight:bold
 }
 .tabmenu a.active{
 	background:#fff;
@@ -25,28 +27,8 @@
 }
 .tabview{
 }
-.tabview li{
-	background:#fff;
-	clear:both;
-	overflow:hidden;
-}
-.tabview li a{
-	display:block;
-	border-bottom:1px solid #000;
-	padding:10px 0;
-	overflow:hidden
-}
-.tabview .pull-left{
-	width:30%;
-	text-align:center;
-}
-.tabview .pull-right{
-	width:70%
-}
-.tabview .pull-right strong{
-	font-size:1.2em
-}
-.tabview .pull-right p{
+
+#last_update{
 	font-size:12px;
-	color:#333
+	padding:15px 0
 }

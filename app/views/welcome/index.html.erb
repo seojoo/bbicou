@@ -1,20 +1,20 @@
+<h1 class="hidden">첫화면</h1>
+
 <div class="page-head">
-	<div class="pull-left" style="width:50%;">
-		<h1>안녕하세요</h1>
+	<div class="pull-left" style="background:url(/bbicou/app/assets/images/bbicou.png) no-repeat right center;background-size:32%;width:100%;padding:30px 0">
+		<h2>안녕하세요</h2>
 		<p>삐약쿠폰에 오신 것을 환영 합니다<br>여러분의 많은 참여 부탁드립니다</p>
 	</div>
-	<div class="pull-right text-right" style="width:50%;"><%= image_tag 'bbicou.png', :alt => 'bbicou', :height => '50%', :width => '50%' %></div>
 </div>
-
 
 <div class="tabgroup">
 	<div class="tabmenu">
-		<a href="#none" class="active">극장별</a><a href="#none">지역별</a>
+		<a href="#none" class="active">극장별 <%= @count %></a><a href="#none">지역별</a>
 	</div>
 	<div class="tabview">
 		<ul class="thumbnail">
 			<li class="list">
-				<a href="#">
+				<a href="./bbicou/megabox/">
 					<div class="pull-left">
 						<%= image_tag 'ico_megabox' ,:alt => 'megabox'  %>
 					</div>
@@ -25,23 +25,23 @@
 				</a>
 			</li>
 			<li class="list">
-				<a href="#">
+				<a href="./bbicou/lotte/">
 					<div class="pull-left">
-						<%= image_tag 'ico_megabox' ,:alt => 'megabox'  %>
+						<%= image_tag 'ico_lottecinema' ,:alt => 'lottecinema'  %>
 					</div>
 					<div class="pull-right">
-						<strong>메가박스</strong>
+						<strong style="color:#c42429">롯데시네마</strong>
 						<p>파주,일산지역 메가박스 할인 쿠폰<br><i class="fa fa-arrow-circle-right"></i> 바로가기</p>
 					</div>
 				</a>
 			</li>
 			<li class="list">
-				<a href="#">
+				<a href="./bbicou/cgv/">
 					<div class="pull-left">
-						<%= image_tag 'ico_megabox' ,:alt => 'megabox'  %>
+						<%= image_tag 'ico_cgv' ,:alt => 'cgv' ,:style => 'position:relative;top:20px' %>
 					</div>
 					<div class="pull-right">
-						<strong>메가박스</strong>
+						<strong style="color:red">CGV</strong>
 						<p>파주,일산지역 메가박스 할인 쿠폰<br><i class="fa fa-arrow-circle-right"></i> 바로가기</p>
 					</div>
 				</a>
@@ -50,4 +50,4 @@
 	</div>
 </div>
 
-<div class="text-right">LAST UPDATED 2015.08.02</div>
+<div id="last_update" class="text-right">LAST UPDATED 2015.08.02</div>

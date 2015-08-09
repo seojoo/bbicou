@@ -22,9 +22,12 @@
 }
 header{
 	background:#000;
-	padding:15px;
 	overflow:hidden;
 }
+	header .wrap{
+		padding:15px;
+		overflow:hidden;
+	}
 	#logo{
 		color:#fff;
 	}
@@ -33,16 +36,33 @@ header{
 			top:-2px;
 			margin-left:3px;
 			font-size:16px;
+			color:#fff;
 		}
 header i{
 	cursor:pointer;
 	display:block;
+	font-size:23px!important;
 }
 .container{
 	background:#ffdc32;
 	clear:both;
-	padding:20px;
+	padding:10px;
 }
+.page-head{
+	overflow:hidden;
+}
+	.page-head h2{
+		font-size:21px;
+	}
+	.page-head p{
+		font-size:13px;
+		line-height:120%;
+		padding-top:3px;
+	}
 footer{
 	background:#000;
+	padding:20px;
+	color:#c4c4c4;
+	font-size:12px;
+	line-height:130%;
 }

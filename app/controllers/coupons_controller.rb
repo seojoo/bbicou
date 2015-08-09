@@ -7,9 +7,24 @@ class CouponsController < ApplicationController
     @coupons = Coupon.all
   end
 
+  def theater
+    case params[:theater]
+    when "megabox"
+      @theater = "megabox"
+    when "lotte"
+      @theater = "lotte"
+    when "cgv"
+      @theater = "cgv"
+    else
+      @theater = "기타"
+    end
+    @coupons = Coupon.where(theater: @theater)
+  end
+
   # GET /coupons/1
   # GET /coupons/1.json
   def show
+
   end
 
   # GET /coupons/new
@@ -25,6 +40,7 @@ class CouponsController < ApplicationController
   # POST /coupons.json
   def create
     @coupon = Coupon.new(coupon_params)
+
 
     respond_to do |format|
       if @coupon.save
@@ -69,6 +85,6 @@ class CouponsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def coupon_params
-      params.require(:coupon).permit(:title, :location, :image, :picture, :picture_cache, :description)
+      params.require(:coupon).permit(:title, :theater, :date, :location, :image, :picture, :picture_cache, :description)
     end
 end

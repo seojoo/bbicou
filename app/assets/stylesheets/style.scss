@@ -1,0 +1,45 @@
+
+ul.thumbnail li{
+	background:#fff;
+	clear:both;
+	overflow:hidden;
+	display:block;
+	width:100%;
+}
+ul.thumbnail li a{
+	display:block;
+	border-bottom:1px solid #000;
+	padding:20px 0;
+	overflow:hidden;
+	line-height:150%;
+	color:#000
+}
+ul.thumbnail li:last-child a{
+	border-bottom:none;
+}
+ul.thumbnail .pull-left{
+	width:30%;
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+
+	img{
+		width:60px;
+		position:relative;
+		top:5px;
+	}
+}
+ul.thumbnail .pull-right{
+	width:70%;
+
+	strong{
+		padding-top:20px;
+	}
+}
+ul.thumbnail .pull-right strong{
+	font-size:1.2em
+}
+ul.thumbnail .pull-right p{
+	font-size:13px;
+	color:#333
+}

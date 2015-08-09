@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   resources :coupons
-  get 'welcome/index'
 
+  get "/:theater" => 'coupons#theater'
+
+  get 'welcome/index'
   root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
